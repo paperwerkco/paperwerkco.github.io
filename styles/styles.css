@@ -80,3 +80,13 @@ ul.nav-top {
 ul li.nav-top-right {
     display: inline;
 }
+
+/*
+Intro block
+*/
+
+.intro-block {
+    height: 256px;
+    background-color: white;
+    padding: 48px;
+}
