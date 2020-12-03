@@ -72,6 +72,7 @@ hr {
 
 .nav-top {
     height: 128px;
+    vertical-align: middle;
 }
 
 .nav-top-left {
@@ -93,6 +94,11 @@ ul li {
     display: inline;
     list-style-type: none;
     text-decoration: none;
+}
+
+.nav-top a:link {
+    text-decoration: none;
+    color: inherit;
 }
 
 /*
