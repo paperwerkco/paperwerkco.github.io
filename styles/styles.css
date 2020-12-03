@@ -42,6 +42,17 @@ body {
     margin: 0 auto;
 }
 
+hr {
+    display: block;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 3px;
+    border-color: black;
+  }
+
 /*
 //Testing styles
 */
@@ -89,4 +100,5 @@ Intro block
     height: 256px;
     background-color: white;
     padding: 48px;
+    margin-bottom: 32px;
 }
