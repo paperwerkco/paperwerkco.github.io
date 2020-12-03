@@ -90,15 +90,28 @@ ul.nav-top {
     width: 50%;
 }
 
-ul li {
+/* ul li {
     display: inline;
     list-style-type: none;
     text-decoration: none;
-}
+} */
 
 .nav-top a:link {
     text-decoration: none;
     color: inherit;
+}
+
+.nav-top a:visited {
+    text-decoration: none;
+    color: inherit;
+}
+
+.nav-top li {
+    display: inline;
+    list-style-type: none;
+    text-decoration: none;
+    color: purple;
+    padding-right: 10px;
 }
 
 /*
