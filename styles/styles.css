@@ -48,8 +48,8 @@ hr {
     margin-bottom: 32px;
     margin-left: auto;
     margin-right: auto;
-    border-style: solic;
-    border-width: 3px;
+    border-style: solid;
+    border-width: 2px;
     border-color: black;
   }
 
@@ -86,10 +86,13 @@ ul.nav-top {
     list-style: none;
     margin: 0;
     padding: 0;
+    width: 50%;
 }
 
-ul li.nav-top-right {
+ul li {
     display: inline;
+    list-style-type: none;
+    text-decoration: none;
 }
 
 /*
