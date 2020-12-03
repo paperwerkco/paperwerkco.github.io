@@ -1,0 +1,82 @@
+/*
+//Global styles
+*/
+
+html {
+    font-family: 'Gothic A1', sans-serif;
+    font-size: 16px;
+    background-color: #F8CDD5;
+}
+
+h1  {
+    font-size: 64px;
+}
+
+h2  {
+    font-size: 48px;
+}
+
+h3  {
+    font-size: 32px;
+}
+
+h4  {
+    font-weight: 700;
+}
+
+h5  {
+    font-size: 14px;
+}
+
+h6  {
+    font-size: 12px;
+}
+
+li, p {
+    font-size: 1em;    
+    line-height: 1.4;
+}
+
+body {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/*
+//Testing styles
+*/
+
+.testBlock {
+    height: 50px;
+    width: 100%;
+}
+
+.testImage {
+    width: 100%;
+}
+
+/*
+//Top navigation
+*/
+
+.nav-top {
+    height: 128px;
+}
+
+.nav-top-left {
+    float: left;
+}
+
+.nav-top-right {
+    float: right;
+}
+
+.nav-top ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+        display: inline;
+    }
+}
