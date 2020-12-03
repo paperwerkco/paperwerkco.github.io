@@ -44,8 +44,8 @@ body {
 
 hr {
     display: block;
-    margin-top: 2em;
-    margin-bottom: 2em;
+    margin-top: 32px;
+    margin-bottom: 32px;
     margin-left: auto;
     margin-right: auto;
     border-style: inset;
