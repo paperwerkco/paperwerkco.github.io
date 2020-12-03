@@ -19,3 +19,19 @@ body {
 .testImage {
     width: 100%;
 }
+
+/*
+//Top navigation
+*/
+
+.nav-top {
+    height: 128px;
+}
+
+.nav-top-left {
+    float: left;
+}
+
+.nav-top-right {
+    float: right;
+}
