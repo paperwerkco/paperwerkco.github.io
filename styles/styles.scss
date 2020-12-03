@@ -61,6 +61,16 @@ body {
 
 .nav-top {
     height: 128px;
+
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    
+        li {
+            display: inline;
+        }
+    }
 }
 
 .nav-top-left {
@@ -71,12 +81,3 @@ body {
     float: right;
 }
 
-.nav-top ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-
-    li {
-        display: inline;
-    }
-}
