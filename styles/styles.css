@@ -1,3 +1,20 @@
+/*
+//Global styles
+*/
+
 body {
     background-color: #F8CDD5;
+}
+
+/*
+//Testing styles
+*/
+
+.testBlock {
+    height: 50px;
+    width: 100%;
+}
+
+.testImage {
+    width: 100%;
 }
