@@ -71,7 +71,7 @@ body {
     float: right;
 }
 
-ul {
+ul.nav-top {
     list-style: none;
     margin: 0;
     padding: 0;
