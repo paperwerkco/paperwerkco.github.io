@@ -187,9 +187,25 @@ Case Study Card
     background-color: #F5EAD8;
 }
 
+.case-study--content a:hover {
+    text-decoration: underline;
+    background-color: #003F5C;
+    outline:  #003F5C 8px solid;
+    color: white;
+}
+
+.case-study--content a:focus {
+    outline:  #000000 3px solid;
+    outline-offset: 6px;
+}
+
+.case-study--content a:visited {
+    text-decoration: none;
+}
+
 /* Case Study Card Typography */
 
-.case-study--card p {
+.case-study--card p, .case-study--card a {
     font-size: 20px;
 }
 
