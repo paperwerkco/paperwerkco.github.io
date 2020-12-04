@@ -10,10 +10,13 @@ html {
 
 h1  {
     font-size: 24px;
+    margin: 0px;
 }
 
 h2  {
-    font-size: 48px;
+    font-size: 24px;
+    font-weight: 900;
+    margin: 0px;
 }
 
 h3  {
@@ -35,6 +38,11 @@ h6  {
 li, p {
     font-size: 1em;    
     line-height: 1.4;
+    color: inherit;
+}
+
+a {
+    color: inherit;
 }
 
 body {
@@ -73,7 +81,7 @@ hr {
 .nav-top {
     /*height: 128px;*/
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -108,6 +116,17 @@ ul.nav-top {
     color: inherit;
 }
 
+.nav-top a:hover {
+    text-decoration: underline;
+    background-color: #FBECEF;
+    outline:  #FBECEF 8px solid;
+}
+
+.nav-top a:focus {
+    outline:  #000000 3px solid;
+    outline-offset: 6px;
+}
+
 .nav-top a:visited {
     text-decoration: none;
     color: inherit;
@@ -122,13 +141,67 @@ ul.nav-top {
     font-size: 20px;
 }
 
+.remove-padding-right {
+    padding-right: 6px !important;
+}
+
 /*
 Intro block
 */
 
 .intro-block {
-    height: 256px;
+    /*height: 64px;*/
     background-color: white;
-    padding: 48px;
+    background-image: url(../images/grid-rectangle.svg);
+    padding: 24px;
     margin-bottom: 32px;
 }
+
+/*
+Case Study Card
+*/
+
+.case-studies {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.case-study--card {
+    background-color: #FBECEF;
+    border-radius: 6px;
+    height: auto;
+    width: 48%;
+    margin-bottom: 32px;
+    overflow: hidden;
+}
+
+.case-study--image {
+    height: 300px;
+    background-color: lightcoral;
+    /*border-radius: inherit;*/
+}
+
+.case-study--content {
+    padding: 16px;
+    background-color: #F5EAD8;
+}
+
+/* Case Study Card Typography */
+
+.case-study--card p {
+    font-size: 20px;
+}
+
+/* Case Study Card Images */
+
+.case-study--image.case-study--design-system {
+    background-image: url(../images/graphic-system.svg);
+}
+
+.case-study--image.case-study--personas {
+    background-image: url(../images/graphic-round.svg);
+}
+
+
+
