@@ -71,8 +71,10 @@ hr {
 */
 
 .nav-top {
-    height: 128px;
-    vertical-align: middle;
+    /*height: 128px;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .nav-top-left {
@@ -81,6 +83,7 @@ hr {
 
 .nav-top-right {
     float: right;
+    vertical-align: middle;
 }
 
 ul.nav-top {
@@ -96,6 +99,10 @@ ul.nav-top {
     text-decoration: none;
 } */
 
+.logo-mark {
+    font-size: 24px;
+}
+
 .nav-top a:link {
     text-decoration: none;
     color: inherit;
@@ -110,8 +117,9 @@ ul.nav-top {
     display: inline;
     list-style-type: none;
     text-decoration: none;
-    color: purple;
-    padding-right: 10px;
+    color: inherit;
+    padding-right: 24px;
+    font-size: 20px;
 }
 
 /*
