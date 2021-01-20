@@ -36,9 +36,10 @@ h6  {
 }
 
 li, p {
-    font-size: 1em;    
+    font-size: 1.4em;    
     line-height: 1.4;
     color: inherit;
+    font-weight: 500;
 }
 
 a {
@@ -48,6 +49,24 @@ a {
 body {
     width: 80%;
     margin: 0 auto;
+}
+
+.about-background {
+    background-color: #FFCBB9;
+    animation: change-background 6s ease;
+}
+
+@keyframes change-background {
+    0% {
+      background: #F8CDD5;
+    }
+    100% {
+      background: #FFCBB9;
+    }
+}
+
+.about-nav {
+    /*color: white;*/
 }
 
 hr {
@@ -60,6 +79,10 @@ hr {
     border-width: 2px;
     border-color: black;
   }
+
+.italic {
+    font-style: italic;
+}
 
 /*
 //Testing styles
@@ -152,7 +175,14 @@ Intro block
 .intro-block {
     /*height: 64px;*/
     background-color: white;
-    background-image: url(../images/grid-rectangle.svg);
+    background-image: url(../images/grid-basic.svg);
+    padding: 24px;
+    margin-bottom: 32px;
+}
+
+.grid-block {
+    background-color: #ffffff;
+    background-image: url(../images/grid-basic.svg);
     padding: 24px;
     margin-bottom: 32px;
 }
@@ -212,11 +242,48 @@ Case Study Card
 /* Case Study Card Images */
 
 .case-study--image.case-study--design-system {
-    background-image: url(../images/graphic-system.svg);
+    /*background-image: url(../images/graphic-system.svg);*/
+    background-color: #fbecef;
+    background-image: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23003f5c' fill-opacity='1'%3E%3Cpath d='M50 50c0-5.523 4.477-10 10-10s10 4.477 10 10-4.477 10-10 10c0 5.523-4.477 10-10 10s-10-4.477-10-10 4.477-10 10-10zM10 10c0-5.523 4.477-10 10-10s10 4.477 10 10-4.477 10-10 10c0 5.523-4.477 10-10 10S0 25.523 0 20s4.477-10 10-10zm10 8c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm40 40c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 }
 
 .case-study--image.case-study--personas {
     background-image: url(../images/graphic-round.svg);
+}
+
+/*About Page*/
+
+.about-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 0px 24px;
+}
+
+.about-column-1 {
+    order: 0; /* default is 0 */
+    flex-grow: 6;
+    flex-shrink: 1; /* default 1 */
+    flex-basis: 33%;
+    padding: inherit;
+  }
+
+.about-column-2 {
+    order: 1; /* default is 0 */
+    flex-grow: 2;
+    flex-shrink: 3; /* default 1 */
+    flex-basis: 66%;
+    padding: inherit;
+  }
+
+@media (max-width: 700px) {
+    .about-content {
+        flex-direction: column;
+        padding: 0px 16px;
+    }
+    body {
+        width: 95%;
+    } 
 }
 
 
