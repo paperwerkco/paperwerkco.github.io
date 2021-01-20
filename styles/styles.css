@@ -10,6 +10,7 @@ html {
 
 h1  {
     font-size: 24px;
+    font-weight: 900;
     margin: 0px;
 }
 
@@ -20,10 +21,11 @@ h2  {
 }
 
 h3  {
-    font-size: 32px;
+    font-size: 20px;
 }
 
 h4  {
+    font-size: 16px;
     font-weight: 700;
 }
 
@@ -40,6 +42,18 @@ li, p {
     line-height: 1.4;
     color: inherit;
     font-weight: 500;
+}
+
+.image-caption-font {
+    font-size: 20px;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.image-caption {
+    background-color:#FFCBB9;
+    padding: 8px 24px;
+    margin-top: 16px;
 }
 
 a {
@@ -168,6 +182,16 @@ ul.nav-top {
     padding-right: 6px !important;
 }
 
+/*Buttons*/
+
+.btn-primary {
+    font-size: 18px;
+    line-height: 1.2;
+    padding: 16px;
+    background-color: #F8CDD5;
+    border: none;
+}
+
 /*
 Intro block
 */
@@ -206,13 +230,13 @@ Case Study Card
     overflow: hidden;
 }
 
-.case-study--image {
+.case-study--card-image {
     height: 300px;
     background-color: lightcoral;
     /*border-radius: inherit;*/
 }
 
-.case-study--content {
+.case-study--card-content {
     padding: 16px;
     background-color: #F5EAD8;
 }
@@ -239,26 +263,42 @@ Case Study Card
     font-size: 20px;
 }
 
-/* Case Study Card Images */
+/* Case Study Card Background Images */
 
-.case-study--image.case-study--design-system {
+/*.case-study--card-image {
+    max-width: 100%;
+    max-height: 100%;
+}*/
+
+.case-study--card-image.case-study--design-system {
     /*background-image: url(../images/graphic-system.svg);*/
     background-color: #fbecef;
-    background-image: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23003f5c' fill-opacity='1'%3E%3Cpath d='M50 50c0-5.523 4.477-10 10-10s10 4.477 10 10-4.477 10-10 10c0 5.523-4.477 10-10 10s-10-4.477-10-10 4.477-10 10-10zM10 10c0-5.523 4.477-10 10-10s10 4.477 10 10-4.477 10-10 10c0 5.523-4.477 10-10 10S0 25.523 0 20s4.477-10 10-10zm10 8c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8zm40 40c4.418 0 8-3.582 8-8s-3.582-8-8-8-8 3.582-8 8 3.582 8 8 8z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    background-image: url("../images/graphic-system.svg");
 }
 
-.case-study--image.case-study--personas {
+.case-study--card-image.case-study--personas {
     background-image: url(../images/graphic-round.svg);
+}
+
+/*Flexbox*/
+
+.flexbox {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 0px 24px;
+    justify-content: space-evenly;
 }
 
 /*About Page*/
 
-.about-content {
+/*.about-content {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     padding: 0px 24px;
 }
+*/
 
 .about-column-1 {
     order: 0; /* default is 0 */
@@ -284,6 +324,65 @@ Case Study Card
     body {
         width: 95%;
     } 
+}
+
+/*Case Study Pages*/
+
+.case-study-background {
+    background-color: #F5E9D8;
+    animation: change-background 6s ease;
+}
+
+@keyframes change-background {
+    0% {
+      background: #F8CDD5;
+    }
+    100% {
+      background: #F5E9D8;
+    }
+}
+
+.case-study--callout {
+    outline: 4px solid black;
+    padding: 16px;
+    box-shadow: 4px 4px 0 0 #FFCBB9;
+}
+
+.case-study--page-content {
+    padding: 0 24px;
+}
+
+.case-study--about-company {
+    font-style: italic;
+}
+
+.case-study-heading--100 {
+    font-size: 36px;
+}
+
+.case-study-heading--200 {
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.case-study-heading--300 {
+    font-size: 24px;
+    color: #003F5C;
+    font-weight: 900;
+}
+
+.case-study--image-and-caption {
+    align: center;
+    display: block;
+    text-align: center;
+    margin: 48px 48px;
+}
+
+.case-study--image {
+    width:100%;
+    height:100%;
+    box-shadow: 8px 8px 0 0 #FFCBB9;
+    outline: 8px solid #FFCBB9;
 }
 
 
