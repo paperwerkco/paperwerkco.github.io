@@ -142,12 +142,11 @@ ul.nav-top {
 .nav-top a:hover {
     text-decoration: underline;
     background-color: #FBECEF;
-    outline:  #FBECEF 8px solid;
 }
 
 .nav-top a:focus {
     outline:  #000000 3px solid;
-    outline-offset: 6px;
+    outline-offset: -1px;
 }
 
 .nav-top a:visited {
@@ -160,8 +159,12 @@ ul.nav-top {
     list-style-type: none;
     text-decoration: none;
     color: inherit;
-    padding-right: 24px;
+    padding-right: 8px;
     font-size: 20px;
+}
+
+.nav-top li a {
+    padding: 8px 8px 8px 8px;
 }
 
 .remove-padding-right {
