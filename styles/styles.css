@@ -116,7 +116,7 @@ hr {
 
 a:focus {
     outline:  #000000 3px solid;
-    outline-offset: -1px;
+    outline-offset: 4px;
 }
 
 /*
@@ -279,6 +279,10 @@ Case Study Card
 
 .case-study--content a:visited {
     text-decoration: none;
+}
+
+.case-study--card-subtitle {
+    height: 56px;
 }
 
 /* Case Study Card Typography */
