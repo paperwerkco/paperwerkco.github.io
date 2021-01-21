@@ -281,10 +281,6 @@ Case Study Card
     text-decoration: none;
 }
 
-.case-study--card-subtitle {
-    height: 56px;
-}
-
 /* Case Study Card Typography */
 
 .case-study--card p, .case-study--card a {
@@ -344,7 +340,7 @@ Case Study Card
     padding: inherit;
   }
 
-@media (max-width: 700px) {
+@media (max-width: 699px) {
     .about-content {
         flex-direction: column;
         padding: 0px 16px;
@@ -356,9 +352,24 @@ Case Study Card
     .case-study--card {
         width: 100%;
     }
+    .case-study-content {
+        flex-direction: column;
+    }
+    .case-study--skills {
+        margin: 0px 0px 24px 0px;
+    }
     body {
         width: 95%;
     } 
+}
+
+@media (min-width: 700px) and (max-width: 1100px) {
+     .case-study--skills {
+         margin: 0px 24px 0px 0px;
+     }
+     .case-study--card-subtitle {
+        /*height: 56px;*/
+    }
 }
 
 /*Case Study Pages*/
