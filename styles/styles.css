@@ -297,7 +297,7 @@ Case Study Card
 .case-study--card-image.case-study--design-system {
     /*background-image: url(../images/graphic-system.svg);*/
     background-color: #fbecef;
-    background-image: url("../images/graphic-system.svg");
+    background-image: url("../images/graphic-system-large.svg");
 }
 
 .case-study--card-image.case-study--personas {
