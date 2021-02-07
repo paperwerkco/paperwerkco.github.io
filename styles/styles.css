@@ -304,6 +304,10 @@ Case Study Card
     background-image: url(../images/graphic-round-large.svg);
 }
 
+.case-study--card-image.case-study--essay-image {
+    background-image: url(../images/graphic-round-large.svg);
+}
+
 /*Flexbox*/
 
 .flexbox {
