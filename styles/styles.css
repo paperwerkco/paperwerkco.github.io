@@ -305,7 +305,11 @@ Case Study Card
 }
 
 .case-study--card-image.case-study--essay-image {
-    background-image: url(../images/graphic-round-large.svg);
+    background-image: url(../images/pattern-navy-light-pink-scallop.svg);
+}
+
+.case-study--card-image.case-study--visual-design {
+    background-image: url(../images/pattern-mcm-stars--orange-navy-white.svg);
 }
 
 /*Flexbox*/
